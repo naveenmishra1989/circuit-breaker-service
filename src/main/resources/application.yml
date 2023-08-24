@@ -1,0 +1,9 @@
+server:
+  port: 8090
+  
+resilience4j:
+  retry:
+    instances:
+      sample-api:
+        max-attempts: 5
+        wait-duration: 2s                         
